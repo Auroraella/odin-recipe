@@ -3,11 +3,92 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Odin Recipes</title>
+    <title>My Favourite Recipes</title>
+    <style>
+        h1 {
+            color: navy;
+            font-family: 'Arial', sans-serif;
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        .title-block {
+            background-color: lightblue;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .recipe-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .recipe-box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 30%;
+            transition: transform 0.3s;
+        }
+
+        .recipe-box:hover {
+            transform: scale(1.05);
+        }
+
+        .recipe-box img {
+            width: 100%;
+            height: 200px;
+            /* Set a fixed height for all images */
+            object-fit: cover;
+            /* Ensure images maintain their aspect ratio */
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .recipe-box img:hover {
+            transform: scale(1.1);
+        }
+
+        .recipe-box h2 {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.5em;
+            margin-top: 10px;
+            transition: transform 0.3s;
+        }
+
+        .recipe-box h2:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Odin Recipes</h1>
+    <div class="title-block">
+        <h1>My Favourite Recipes</h1>
+    </div>
+    <div class="recipe-container">
+        <div class="recipe-box">
+            <a href="recipes/tiramisu.html">
+                <img src="recipes/images/tiramisu.jpg" alt="Tiramisu">
+                <h2>Tiramisu</h2>
+            </a>
+        </div>
+        <div class="recipe-box">
+            <a href="recipes/matcha.html">
+                <img src="recipes/images/matcha.jpg" alt="Matcha Green Tea Ice Cream">
+                <h2>Matcha Green Tea Ice Cream</h2>
+            </a>
+        </div>
+        <div class="recipe-box">
+            <a href="recipes/smoothie.html">
+                <img src="recipes/images/smoothie.jpg" alt="Mango-Peach Smoothie">
+                <h2>Mango-Peach Smoothie</h2>
+            </a>
+        </div>
+    </div>
 </body>
 
 </html>
