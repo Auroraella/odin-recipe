@@ -13,10 +13,64 @@
         }
 
         .title-block {
-            background-color: lightblue;
+            background-color: lightpink;
+            /* Changed background color to light pink */
             padding: 20px;
             border-radius: 10px;
             text-align: center;
+        }
+
+        .nav-bar {
+            background-color: lightpink;
+            /* Changed background color to light pink */
+            padding: 10px;
+            text-align: left;
+        }
+
+        .nav-bar a {
+            font-family: 'Arial', sans-serif;
+            color: navy;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        .nav-bar a:hover {
+            text-decoration: underline;
+        }
+
+        .content-block {
+            background-color: lightpink;
+            /* Added background color for content */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .introduction {
+            background-color: lightpink;
+            /* Light pink background */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: left;
+            /* Align text to the left */
+            font-family: 'Arial', sans-serif;
+        }
+
+        .introduction h2 {
+            color: navy;
+            /* Changed color to navy */
+            font-size: 2em;
+            /* Increased font size */
+            text-align: left;
+            /* Align text to the left */
+        }
+
+        .introduction p {
+            font-size: 1.2em;
+            /* Increased font size for the paragraph */
+            text-align: justify;
         }
 
         .recipe-container {
@@ -27,7 +81,8 @@
 
         .recipe-box {
             background-color: #f9f9f9;
-            padding: 20px;
+            padding: 30px;
+            /* Increased padding */
             border-radius: 10px;
             text-align: center;
             width: 30%;
@@ -40,8 +95,8 @@
 
         .recipe-box img {
             width: 100%;
-            height: 200px;
-            /* Set a fixed height for all images */
+            height: 250px;
+            /* Increased height for all images */
             object-fit: cover;
             /* Ensure images maintain their aspect ratio */
             border-radius: 10px;
@@ -54,7 +109,8 @@
 
         .recipe-box h2 {
             font-family: 'Arial', sans-serif;
-            font-size: 1.5em;
+            font-size: 2em;
+            /* Increased font size */
             margin-top: 10px;
             transition: transform 0.3s;
         }
@@ -67,26 +123,47 @@
 
 <body>
     <div class="title-block">
+        <div class="nav-bar">
+            <a href="#home">Home</a>
+            <a href="#introduction">Introduction</a>
+            <a href="#recipes">Recipes</a>
+        </div>
         <h1>My Favourite Recipes</h1>
     </div>
-    <div class="recipe-container">
-        <div class="recipe-box">
-            <a href="recipes/tiramisu.html">
-                <img src="recipes/images/tiramisu.jpg" alt="Tiramisu">
-                <h2>Tiramisu</h2>
-            </a>
-        </div>
-        <div class="recipe-box">
-            <a href="recipes/matcha.html">
-                <img src="recipes/images/matcha.jpg" alt="Matcha Green Tea Ice Cream">
-                <h2>Matcha Green Tea Ice Cream</h2>
-            </a>
-        </div>
-        <div class="recipe-box">
-            <a href="recipes/smoothie.html">
-                <img src="recipes/images/smoothie.jpg" alt="Mango-Peach Smoothie">
-                <h2>Mango-Peach Smoothie</h2>
-            </a>
+    <div id="introduction" class="introduction">
+        <h2>Introduction</h2>
+        <p>Hi, welcome to my website introducing my favourite recipes. I am a girl who is passionate about cooking and
+            baking. The story of cooking began since I was a little kid, after several times watching my parents cooking
+            in the kitchen.
+            I have a sweet tooth so I want to create a website with most of my favourite desserts. However, I am in love
+            with many other dishes, so I will try my best to update various international recipes in the world.
+            As a Vietnamese girl, I would like to share Vietnamese culture and tradition through the amazing recipes of
+            Vietnamese cuisine in this website.
+            In the future, after every time I make a dish successfully, I will update the website to share with
+            everyone. Please continue follow my website to stay updated with how is Aurora going with her lovely
+            recipes.
+        </p>
+    </div>
+    <div id="recipes" class="content-block">
+        <div class="recipe-container">
+            <div class="recipe-box">
+                <a href="recipes/tiramisu.html">
+                    <img src="recipes/images/tiramisu.jpg" alt="Tiramisu">
+                    <h2>Tiramisu</h2>
+                </a>
+            </div>
+            <div class="recipe-box">
+                <a href="recipes/matcha.html">
+                    <img src="recipes/images/matcha.jpg" alt="Matcha Green Tea Ice Cream">
+                    <h2>Matcha Green Tea Ice Cream</h2>
+                </a>
+            </div>
+            <div class="recipe-box">
+                <a href="recipes/smoothie.html">
+                    <img src="recipes/images/smoothie.jpg" alt="Mango-Peach Smoothie">
+                    <h2>Mango-Peach Smoothie</h2>
+                </a>
+            </div>
         </div>
     </div>
 </body>
